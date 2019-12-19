@@ -4,11 +4,61 @@
   
   
   <entry>
+    <title>java面试题</title>
+    <link href="undefined2019/12/19/java%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <url>2019/12/19/java%E9%9D%A2%E8%AF%95%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-String类中常用的方法？"><a href="#1-String类中常用的方法？" class="headerlink" title="1.String类中常用的方法？"></a>1.String类中常用的方法？</h2><p>  Split(): 把字符串分割成字符串数组<br>  indexOf(): 从制定字符串提取索引位置<br>  append(): 追加字符和字符串<br>  trim(): 去除字符串两端空格<br>  replace(): 替换<br>  hashCode(): 返回此字符串的哈希码<br>  subString(): 截取字符串<br>  equals(): 比较<br>  length(): 获取字符串的长度<br>  valueOf(): 转换为字符串<br>  concat(): 将指定字符串连接到此字符串的结尾<br>  contains(): 检查一个字符串中是否包含想要的值</p><h2 id="2-什么是重写和重写"><a href="#2-什么是重写和重写" class="headerlink" title="2.什么是重写和重写"></a>2.什么是重写和重写</h2><p> 我理解的java里方法的重写和重载就是java里的多态，重载是在一个类中多态对的体现。<br> 方法重载是一个类中定义了多个方法相同，参数数量不同，类型和次序不同，这就是是重载。<br> 方法的重写是子类存在的方法与父类的方法名字相同，参数个数与类型一样，返回值一样，这就是重写</p><p> <img src="/img/java1.png" srcset="/img/loading.gif" alt=""></p><h2 id="3-String中的-和-equals-的区别"><a href="#3-String中的-和-equals-的区别" class="headerlink" title="3.String中的== 和 equals 的区别"></a>3.String中的== 和 equals 的区别</h2><p>  ==比较的是内存地址。equals比较的是内容。<br>  String a=”abc” String b=”abc” System.out.println(a==b) 输出的是true.String a= new String(“abc”),String b=new String(“abc”)   System.out.println(a==b) 输入的是false</p><h2 id="4-Java中的String，StringBuilder，StringBuffer三者的区别"><a href="#4-Java中的String，StringBuilder，StringBuffer三者的区别" class="headerlink" title="4.Java中的String，StringBuilder，StringBuffer三者的区别?"></a>4.Java中的String，StringBuilder，StringBuffer三者的区别?</h2><p>  我在开发时string 用来形容少量的字符串操作，他修饰的都是不可变字符串，在拼接SQL语句中使用。</p><h2 id="5-Final关键字-final和finally的区别"><a href="#5-Final关键字-final和finally的区别" class="headerlink" title="5.Final关键字?final和finally的区别?"></a>5.Final关键字?final和finally的区别?</h2><p>  其实Final是一个安全修饰符,就是用final修饰的类不能被继承,用final声明的方法不能被重写,使用final声明的变量就相当于常量,不能被修改。<br>Finally是在异常里经常用到的, 就是try和cach里的代码执行完以后,必须要执行的方法,我们经常在finally里写一些关闭资源的方法,比如说关闭数据库连接,或者关闭IO流什么的.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>神秘海域4</title>
+    <link href="undefined2019/12/19/%E7%A5%9E%E7%A7%98%E6%B5%B7%E5%9F%9F/"/>
+    <url>2019/12/19/%E7%A5%9E%E7%A7%98%E6%B5%B7%E5%9F%9F/</url>
+    
+    <content type="html"><![CDATA[<p>一个星期左右通关的，不愧是顽皮狗的神作。代入感极强。打斗和剧情都很nice。</p><h2 id="来几张图留念一下"><a href="#来几张图留念一下" class="headerlink" title="来几张图留念一下"></a>来几张图留念一下</h2><p><img src="/img/hai1.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/hai2.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/hai3.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/hai4.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/hai5.png" srcset="/img/loading.gif" alt=""></p><p>年纪大了但是主角一颗冒险的心，内心从未停歇。期待下一个作品。下一个游戏玩的巫师三。以每天晚上半个小时的进度可以无望通关了。<br>节奏太慢，沉不下心可不行啊。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>索尼</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Ps4</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>hexo整合gitub 常用命令</title>
     <link href="undefined2019/12/19/Hexo%E6%95%B4%E5%90%88Gitub/"/>
     <url>2019/12/19/Hexo%E6%95%B4%E5%90%88Gitub/</url>
     
-    <content type="html"><![CDATA[<p>之前购买服务期搭建的博客网站，又费钱又费时。同事建议用hexo整合gitub搭建，一晚上就出来了。也要感谢大牛的技术栈。把一些在搭建时候重要的写下来。差点就续三年的服务器了！<br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">点击查看hexo官方命令</a></p><h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><h3 id="清除缓存-每次提交前-最好clean一下"><a href="#清除缓存-每次提交前-最好clean一下" class="headerlink" title="清除缓存 每次提交前 最好clean一下"></a>清除缓存 每次提交前 最好clean一下</h3><pre><code class="bash">$ hexo clean</code></pre><h3 id="在线预览，使用debug模式-注意：先测试在提交"><a href="#在线预览，使用debug模式-注意：先测试在提交" class="headerlink" title="在线预览，使用debug模式 注意：先测试在提交"></a>在线预览，使用debug模式 注意：先测试在提交</h3><pre><code class="bash">$ hexo s --debug</code></pre><h3 id="生成静态文件后才可以提交"><a href="#生成静态文件后才可以提交" class="headerlink" title="生成静态文件后才可以提交"></a>生成静态文件后才可以提交</h3><pre><code class="bash">$ hexo gengrate</code></pre><h3 id="提交到gitub"><a href="#提交到gitub" class="headerlink" title="提交到gitub"></a>提交到gitub</h3><pre><code class="bash">$ hexo deploy</code></pre><h3 id="书写参数设置"><a href="#书写参数设置" class="headerlink" title="书写参数设置"></a>书写参数设置</h3><pre><code class="bash">title: postName #文章页面上的显示名称，一般是中文date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre><h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>之前购买服务器搭建的博客网站，又费钱又费时。同事建议用hexo整合gitub搭建，一晚上就出来了。也要感谢大牛的技术栈。把一些在搭建时候重要的写下来。差点就续三年的服务器了！<br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">点击查看hexo官方命令</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener">这个教程挺详细的包括域名映射</a></p><h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><h3 id="清除缓存-每次提交前-最好clean一下"><a href="#清除缓存-每次提交前-最好clean一下" class="headerlink" title="清除缓存 每次提交前 最好clean一下"></a>清除缓存 每次提交前 最好clean一下</h3><pre><code class="bash">$ hexo clean</code></pre><h3 id="在线预览，使用debug模式-注意：先测试在提交"><a href="#在线预览，使用debug模式-注意：先测试在提交" class="headerlink" title="在线预览，使用debug模式 注意：先测试在提交"></a>在线预览，使用debug模式 注意：先测试在提交</h3><pre><code class="bash">$ hexo s --debug</code></pre><h3 id="生成静态文件后才可以提交"><a href="#生成静态文件后才可以提交" class="headerlink" title="生成静态文件后才可以提交"></a>生成静态文件后才可以提交</h3><pre><code class="bash">$ hexo gengrate</code></pre><h3 id="提交到gitub"><a href="#提交到gitub" class="headerlink" title="提交到gitub"></a>提交到gitub</h3><pre><code class="bash">$ hexo deploy</code></pre><h3 id="书写参数设置"><a href="#书写参数设置" class="headerlink" title="书写参数设置"></a>书写参数设置</h3><pre><code class="bash">title: postName #文章页面上的显示名称，一般是中文date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre><h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre>]]></content>
     
     
     <categories>
