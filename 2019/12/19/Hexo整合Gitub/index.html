@@ -15,7 +15,7 @@
   <meta name="description" content="个人博客，记录生活，回顾技术">
   <meta name="author" content="刘昭博">
   <meta name="keywords" content="">
-  <title>标签 ~  刘昭博</title>
+  <title>hexo整合gitub 常用命令 ~  刘昭博</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -38,7 +38,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -98,7 +98,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('/img/default4.png')no-repeat center center;
+         style="background: url('/img/default.png')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -108,6 +108,41 @@
               
             </span>
 
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Thursday, December 19th 2019, 11:20 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    259 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
             
           </div>
 
@@ -119,22 +154,78 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<div class="text-center tagcloud">
-  <a href="/tags/Hexo/" style="font-size: 15px; color: #bbe">Hexo</a>
-</div>
-              </div>
-            </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>之前购买服务期搭建的博客网站，又费钱又费时。同事建议用hexo整合gitub搭建，一晚上就出来了。也要感谢大牛的技术栈。把一些在搭建时候重要的写下来。差点就续三年的服务器了！<br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">点击查看hexo官方命令</a></p>
+<h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><h3 id="清除缓存-每次提交前-最好clean一下"><a href="#清除缓存-每次提交前-最好clean一下" class="headerlink" title="清除缓存 每次提交前 最好clean一下"></a>清除缓存 每次提交前 最好clean一下</h3><pre><code class="bash">$ hexo clean</code></pre>
+<h3 id="在线预览，使用debug模式-注意：先测试在提交"><a href="#在线预览，使用debug模式-注意：先测试在提交" class="headerlink" title="在线预览，使用debug模式 注意：先测试在提交"></a>在线预览，使用debug模式 注意：先测试在提交</h3><pre><code class="bash">$ hexo s --debug</code></pre>
+<h3 id="生成静态文件后才可以提交"><a href="#生成静态文件后才可以提交" class="headerlink" title="生成静态文件后才可以提交"></a>生成静态文件后才可以提交</h3><pre><code class="bash">$ hexo gengrate</code></pre>
+<h3 id="提交到gitub"><a href="#提交到gitub" class="headerlink" title="提交到gitub"></a>提交到gitub</h3><pre><code class="bash">$ hexo deploy</code></pre>
+<h3 id="书写参数设置"><a href="#书写参数设置" class="headerlink" title="书写参数设置"></a>书写参数设置</h3><pre><code class="bash">title: postName #文章页面上的显示名称，一般是中文
+date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改
+categories: 默认分类 #分类
+tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格
+description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre>
+<h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E5%BC%80%E5%8F%91">开发</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Hexo">Hexo</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -209,6 +300,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
@@ -249,7 +345,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签&nbsp;",
+        "hexo整合gitub 常用命令&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
