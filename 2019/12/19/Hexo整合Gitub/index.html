@@ -37,6 +37,8 @@
 <meta name="generator" content="Hexo 4.1.1"></head>
 
 
+
+
 <body>
   <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
@@ -122,7 +124,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    273 字
+                    319 字
                   </span>&nbsp;
                 
 
@@ -174,6 +176,8 @@ categories: 默认分类 #分类
 tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格
 description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre>
 <h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre>
+<h3 id="更新-提示“FATAL-Port-4000-has-been-used-Try-other-port-instead-”"><a href="#更新-提示“FATAL-Port-4000-has-been-used-Try-other-port-instead-”" class="headerlink" title="更新 提示“FATAL Port 4000 has been used. Try other port instead.”"></a>更新 提示“FATAL Port 4000 has been used. Try other port instead.”</h3><p>在使用了$ hexo s命令预览博客效果后使用Control+C关闭<br>解决办法：</p>
+<pre><code class="bash">$ sudo hexo s -p 新端口号</code></pre>
 
             <hr>
           </div>
@@ -226,6 +230,32 @@ description: 附加一段文章摘要，字数最好在140字以内，会出现�
       <br><br>
       
       
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'false' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "FIsaWwJQSbsbeAKSGfHvJRhD-gzGzoHsz",
+        app_key: "z1KLD7TI85gf4oQCD6oHADhg",
+        placeholder: "说点什么",
+        avatar: "retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
 
     
   </div>

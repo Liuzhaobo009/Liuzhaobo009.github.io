@@ -115,7 +115,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  Friday, December 20th 2019, 6:52 am
+                  Saturday, December 21st 2019, 2:56 pm
                 </p>
               
 
@@ -124,7 +124,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    640 字
+                    752 字
                   </span>&nbsp;
                 
 
@@ -166,11 +166,32 @@
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
             <p>java 每天5道 练习</p>
-<h2 id="1-java里可以可以有多继承"><a href="#1-java里可以可以有多继承" class="headerlink" title="1.java里可以可以有多继承"></a>1.java里可以可以有多继承</h2><p>  不可以，想要多继承用接口</p>
-<h2 id="2-HashMap和Hashtable的区别"><a href="#2-HashMap和Hashtable的区别" class="headerlink" title="2.HashMap和Hashtable的区别"></a>2.HashMap和Hashtable的区别</h2><p> 这两个都是map 接口下的实现类，我们开发时候常用的是HashMap 虽然HashMap不是线程安全的<br> 但是他的储存效率较高，Hashtable是线程安全的我们看过他底层的put方法前面加的synchronize关键字<br> ，但是他的效率太低，我们开发很少使用。<br> 为什么说hashTabke是线程安全的？因为看源码的时候里面put方法前面加了synchronized关键字<br> 什么情况下用HashMap?我们有时候在自定义json字符串的时候，封装到list中进行返回</p>
-<h2 id="3-解决hashMap线程不安全的问题"><a href="#3-解决hashMap线程不安全的问题" class="headerlink" title="3.解决hashMap线程不安全的问题"></a>3.解决hashMap线程不安全的问题</h2><p> 可以通过Collections集合工具类对线程进行包装，使其变成线程安全的，也可以在使用时候加上synchronize<br> 关键字进行同步</p>
-<h2 id="4-HashMap底层实现原理"><a href="#4-HashMap底层实现原理" class="headerlink" title="4.HashMap底层实现原理"></a>4.HashMap底层实现原理</h2><p> 这个我在论坛上看过，HashMap底层是通过数组和链接联合实现的，当我们创建hashmap时候会先创建<br> 一个数组，当我们听put方法存数据时，先根据key的hashcode值计算出hash值，然后用这个哈希值确定在数组中的位置，再把value值放进去，如果这个位置本来没放东西，就会直接放进去，如果之前就有，就会生成一个链表，把新放入的值放在头部，当用get方法取值时，会先根据key的hashcode值计算出hash值，确定位置，再根据equals方法从该位置上的链表中取出该value值</p>
-<h2 id="5-碰撞怎么产生，怎么解决？"><a href="#5-碰撞怎么产生，怎么解决？" class="headerlink" title="5.碰撞怎么产生，怎么解决？"></a>5.碰撞怎么产生，怎么解决？</h2><p> 解决方案,堆里面在存储对象地址的时候有一个开放地址的方法：当发生地址冲突时，按照某种方法继续探测哈希表中的其他存储单元，直到找到空位置为止。<br>第二种是用rehash(再哈希法)：当发生冲突时，使用第二个、第三个、哈希函数计算地址，直到无冲突时。缺点：计算时间增加。比如上面第一次按照姓首字母进行哈希，如果产生冲突可以按照姓字母首字母第二位进行哈希，再冲突，第三位，直到不冲突为止<br>3、链地址法（拉链法）：创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。</p>
+<h2 id="1-int和Integer的区别？"><a href="#1-int和Integer的区别？" class="headerlink" title="1.int和Integer的区别？"></a>1.int和Integer的区别？</h2><p>int是基本数据类型，Integer是java为int提供的封装类，是引用数据类型。int默认值是0，而integer的默认值为null</p>
+<h2 id="2-java的三大特性"><a href="#2-java的三大特性" class="headerlink" title="2.java的三大特性"></a>2.java的三大特性</h2><p>这个java的三大特性无非就是封装，继承，多态嘛<br>封装体现到我们把方法和变量都封装到一个类里面，直接用对象调用就可以了。<br>继承的体现是我们可以复用父类里面的代码，我们在项目中可以把共有的方法写到base的一个类中，<br>让其他类继承就可以了。<br>堕胎就是java里面的继承，重写，重载，都是多态，比如加号如果两边是数字的化，那就是一个运算符，<br>如果两边是字符串的话，那他就是个连接符。</p>
+<h2 id="3-java-arrayList的存储结构-初始化的时候创建多大的数组"><a href="#3-java-arrayList的存储结构-初始化的时候创建多大的数组" class="headerlink" title="3.java arrayList的存储结构,初始化的时候创建多大的数组?"></a>3.java arrayList的存储结构,初始化的时候创建多大的数组?</h2><p>ArrayList 是基于数组实现的，是一个动态数组，其容量能自动增长，类似于c语言中的动态申请内存，动态增长内存。<br>ArrayList 是线程不安全的，只能用在单线程环境下。多线程环境下可以考虑用Collections.synchronizedList(List l)函数返回一个线程安全的ArrayList类，也可以使用concurrent并发包下的CopyOnWriteArrayList类。</p>
+<h2 id="4-ArrayList与LinkedList区别"><a href="#4-ArrayList与LinkedList区别" class="headerlink" title="4.ArrayList与LinkedList区别"></a>4.ArrayList与LinkedList区别</h2><p>ArrayList使用数组方式存储数据，所以根据索引查询数据速度快，而新增或删除元素时需要涉及到位移操作，所以比较慢。<br>LinkedList使用双向连接方式存储数据，每个元素都记录前后元素的指针，所以插入、删除数据时只是更改前后元素的指针指向即可，速度非常快，然后通过下标查询元素时需要从头开始索引，所以比较慢，但是如果查询前几个元素或后几个元素速度比较快。开发中什么时候到ArrayList?,我们在做查询的时候把查询出来的数据经常存到arraylist里.<br>注意：想清楚指针指向</p>
+<p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%201.png" srcset="/img/loading.gif" alt=""><br><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%202.png" srcset="/img/loading.gif" alt=""></p>
+<h2 id="5-抽象类和接口的区别"><a href="#5-抽象类和接口的区别" class="headerlink" title="5.抽象类和接口的区别?"></a>5.抽象类和接口的区别?</h2><p>抽象类里可以有普通方法也可以有抽象方法,接口里只能有抽象方法,但是在jdk1.8以后也可以在接口中添加普通方法了,就是得用default修饰一下这个方法,调用方式如下代码:这个代码不用背,在于理解和动手操作</p>
+<pre><code class="bash">interface Vehicle {
+　　default void print(){
+　　　　System.out.println(&quot;我是一辆车!&quot;);
+　　}
+　　static void blowHorn(){
+　　　　System.out.println(&quot;按喇叭!!!&quot;);
+　}
+}
+必须是default (默认)或者static (静态)修饰的方法，这样，接口中也可以写实现，
+而且接口的实现类可以重新接口的默认方法，也可以用super关键字调用接口的默认方法！
+public class car implements vehicle, fourWheeler {
+　　default void print(){
+　　　　System.out.println(&quot;我是一辆四轮汽车!&quot;);
+　　}
+}
+public class car implements vehicle, fourWheeler {
+　　public void print(){
+　　　　vehicle.super.print();
+　　}
+}</code></pre>
 
             <hr>
           </div>

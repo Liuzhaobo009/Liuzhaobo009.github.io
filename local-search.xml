@@ -5,6 +5,56 @@
   
   <entry>
     <title>java面试题</title>
+    <link href="undefined2019/12/21/java%E9%9D%A2%E8%AF%95%E9%A2%98-2/"/>
+    <url>2019/12/21/java%E9%9D%A2%E8%AF%95%E9%A2%98-2/</url>
+    
+    <content type="html"><![CDATA[<p>java 每天5道 练习</p><h2 id="1-int和Integer的区别？"><a href="#1-int和Integer的区别？" class="headerlink" title="1.int和Integer的区别？"></a>1.int和Integer的区别？</h2><p>int是基本数据类型，Integer是java为int提供的封装类，是引用数据类型。int默认值是0，而integer的默认值为null</p><h2 id="2-java的三大特性"><a href="#2-java的三大特性" class="headerlink" title="2.java的三大特性"></a>2.java的三大特性</h2><p>这个java的三大特性无非就是封装，继承，多态嘛<br>封装体现到我们把方法和变量都封装到一个类里面，直接用对象调用就可以了。<br>继承的体现是我们可以复用父类里面的代码，我们在项目中可以把共有的方法写到base的一个类中，<br>让其他类继承就可以了。<br>堕胎就是java里面的继承，重写，重载，都是多态，比如加号如果两边是数字的化，那就是一个运算符，<br>如果两边是字符串的话，那他就是个连接符。</p><h2 id="3-java-arrayList的存储结构-初始化的时候创建多大的数组"><a href="#3-java-arrayList的存储结构-初始化的时候创建多大的数组" class="headerlink" title="3.java arrayList的存储结构,初始化的时候创建多大的数组?"></a>3.java arrayList的存储结构,初始化的时候创建多大的数组?</h2><p>ArrayList 是基于数组实现的，是一个动态数组，其容量能自动增长，类似于c语言中的动态申请内存，动态增长内存。<br>ArrayList 是线程不安全的，只能用在单线程环境下。多线程环境下可以考虑用Collections.synchronizedList(List l)函数返回一个线程安全的ArrayList类，也可以使用concurrent并发包下的CopyOnWriteArrayList类。</p><h2 id="4-ArrayList与LinkedList区别"><a href="#4-ArrayList与LinkedList区别" class="headerlink" title="4.ArrayList与LinkedList区别"></a>4.ArrayList与LinkedList区别</h2><p>ArrayList使用数组方式存储数据，所以根据索引查询数据速度快，而新增或删除元素时需要涉及到位移操作，所以比较慢。<br>LinkedList使用双向连接方式存储数据，每个元素都记录前后元素的指针，所以插入、删除数据时只是更改前后元素的指针指向即可，速度非常快，然后通过下标查询元素时需要从头开始索引，所以比较慢，但是如果查询前几个元素或后几个元素速度比较快。开发中什么时候到ArrayList?,我们在做查询的时候把查询出来的数据经常存到arraylist里.<br>注意：想清楚指针指向</p><p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%201.png" srcset="/img/loading.gif" alt=""><br><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%202.png" srcset="/img/loading.gif" alt=""></p><h2 id="5-抽象类和接口的区别"><a href="#5-抽象类和接口的区别" class="headerlink" title="5.抽象类和接口的区别?"></a>5.抽象类和接口的区别?</h2><p>抽象类里可以有普通方法也可以有抽象方法,接口里只能有抽象方法,但是在jdk1.8以后也可以在接口中添加普通方法了,就是得用default修饰一下这个方法,调用方式如下代码:这个代码不用背,在于理解和动手操作</p><pre><code class="bash">interface Vehicle {　　default void print(){　　　　System.out.println(&quot;我是一辆车!&quot;);　　}　　static void blowHorn(){　　　　System.out.println(&quot;按喇叭!!!&quot;);　}}必须是default (默认)或者static (静态)修饰的方法，这样，接口中也可以写实现，而且接口的实现类可以重新接口的默认方法，也可以用super关键字调用接口的默认方法！public class car implements vehicle, fourWheeler {　　default void print(){　　　　System.out.println(&quot;我是一辆四轮汽车!&quot;);　　}}public class car implements vehicle, fourWheeler {　　public void print(){　　　　vehicle.super.print();　　}}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>郑州一日</title>
+    <link href="undefined2019/12/21/%E6%B8%B8%E8%AE%B0/"/>
+    <url>2019/12/21/%E6%B8%B8%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h3 id="人真的很多，每次坐地铁都能激起买车的欲望。还有9天就2020年了。新年新规划。更要善始善终。"><a href="#人真的很多，每次坐地铁都能激起买车的欲望。还有9天就2020年了。新年新规划。更要善始善终。" class="headerlink" title="人真的很多，每次坐地铁都能激起买车的欲望。还有9天就2020年了。新年新规划。更要善始善终。"></a>人真的很多，每次坐地铁都能激起买车的欲望。还有9天就2020年了。新年新规划。更要善始善终。</h3><p>新的计划我会在博客里面一一列出。</p><h2 id="新悦城家附近的商场，去过一两次。没什么好玩的，那时候去还有闭门的店铺，也不知道现在如何了"><a href="#新悦城家附近的商场，去过一两次。没什么好玩的，那时候去还有闭门的店铺，也不知道现在如何了" class="headerlink" title="新悦城家附近的商场，去过一两次。没什么好玩的，那时候去还有闭门的店铺，也不知道现在如何了"></a>新悦城家附近的商场，去过一两次。没什么好玩的，那时候去还有闭门的店铺，也不知道现在如何了</h2><p><img src="http://q2rjj2f8w.bkt.clouddn.com/61576909735_.pic.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="到达高铁站，12点得票，刚开始还没人，到了12点爆满了"><a href="#到达高铁站，12点得票，刚开始还没人，到了12点爆满了" class="headerlink" title="到达高铁站，12点得票，刚开始还没人，到了12点爆满了"></a>到达高铁站，12点得票，刚开始还没人，到了12点爆满了</h2><p><img src="http://q2rjj2f8w.bkt.clouddn.com/51576909734_.pic.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="等车。凉风吹得嗖嗖的，冬天还是有多厚穿多厚。"><a href="#等车。凉风吹得嗖嗖的，冬天还是有多厚穿多厚。" class="headerlink" title="等车。凉风吹得嗖嗖的，冬天还是有多厚穿多厚。"></a>等车。凉风吹得嗖嗖的，冬天还是有多厚穿多厚。</h2><p><img src="http://q2rjj2f8w.bkt.clouddn.com/41576909733_.pic.jpg" srcset="/img/loading.gif" alt=""></p><p><img src="http://q2rjj2f8w.bkt.clouddn.com/11576909730_.pic.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="到达朋友家"><a href="#到达朋友家" class="headerlink" title="到达朋友家"></a>到达朋友家</h2><p><img src="http://q2rjj2f8w.bkt.clouddn.com/31576909732_.pic.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="累了一天回去了"><a href="#累了一天回去了" class="headerlink" title="累了一天回去了"></a>累了一天回去了</h2><p><img src="http://q2rjj2f8w.bkt.clouddn.com/21576909731_.pic.jpg" srcset="/img/loading.gif" alt=""></p><p>还有个小插曲，进车厢的时候旁边有一个带这个小女孩没座位，因为我就一站路。就让小女孩坐了。挺可爱的，她妈妈也挺好，走的时候还专门找到我给我水果吃。<br>在高铁上有点尴尬。不过还是挺开心的不是么，至少不后悔。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>旅行</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java面试题</title>
     <link href="undefined2019/12/20/java%E9%9D%A2%E8%AF%95%E9%A2%98-1/"/>
     <url>2019/12/20/java%E9%9D%A2%E8%AF%95%E9%A2%98-1/</url>
     
@@ -83,7 +133,7 @@
     <link href="undefined2019/12/19/Hexo%E6%95%B4%E5%90%88Gitub/"/>
     <url>2019/12/19/Hexo%E6%95%B4%E5%90%88Gitub/</url>
     
-    <content type="html"><![CDATA[<p>之前购买服务器搭建的博客网站，又费钱又费时。同事建议用hexo整合gitub搭建，一晚上就出来了。也要感谢大牛的技术栈。把一些在搭建时候重要的写下来。差点就续三年的服务器了！<br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">点击查看hexo官方命令</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener">这个教程挺详细的包括域名映射</a></p><h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><h3 id="清除缓存-每次提交前-最好clean一下"><a href="#清除缓存-每次提交前-最好clean一下" class="headerlink" title="清除缓存 每次提交前 最好clean一下"></a>清除缓存 每次提交前 最好clean一下</h3><pre><code class="bash">$ hexo clean</code></pre><h3 id="在线预览，使用debug模式-注意：先测试在提交"><a href="#在线预览，使用debug模式-注意：先测试在提交" class="headerlink" title="在线预览，使用debug模式 注意：先测试在提交"></a>在线预览，使用debug模式 注意：先测试在提交</h3><pre><code class="bash">$ hexo s --debug</code></pre><h3 id="生成静态文件后才可以提交"><a href="#生成静态文件后才可以提交" class="headerlink" title="生成静态文件后才可以提交"></a>生成静态文件后才可以提交</h3><pre><code class="bash">$ hexo gengrate</code></pre><h3 id="提交到gitub"><a href="#提交到gitub" class="headerlink" title="提交到gitub"></a>提交到gitub</h3><pre><code class="bash">$ hexo deploy</code></pre><h3 id="书写参数设置"><a href="#书写参数设置" class="headerlink" title="书写参数设置"></a>书写参数设置</h3><pre><code class="bash">title: postName #文章页面上的显示名称，一般是中文date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre><h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>之前购买服务器搭建的博客网站，又费钱又费时。同事建议用hexo整合gitub搭建，一晚上就出来了。也要感谢大牛的技术栈。把一些在搭建时候重要的写下来。差点就续三年的服务器了！<br><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">点击查看hexo官方命令</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html#%E5%86%99%E5%8D%9A%E5%AE%A2%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener">这个教程挺详细的包括域名映射</a></p><h2 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h2><h3 id="清除缓存-每次提交前-最好clean一下"><a href="#清除缓存-每次提交前-最好clean一下" class="headerlink" title="清除缓存 每次提交前 最好clean一下"></a>清除缓存 每次提交前 最好clean一下</h3><pre><code class="bash">$ hexo clean</code></pre><h3 id="在线预览，使用debug模式-注意：先测试在提交"><a href="#在线预览，使用debug模式-注意：先测试在提交" class="headerlink" title="在线预览，使用debug模式 注意：先测试在提交"></a>在线预览，使用debug模式 注意：先测试在提交</h3><pre><code class="bash">$ hexo s --debug</code></pre><h3 id="生成静态文件后才可以提交"><a href="#生成静态文件后才可以提交" class="headerlink" title="生成静态文件后才可以提交"></a>生成静态文件后才可以提交</h3><pre><code class="bash">$ hexo gengrate</code></pre><h3 id="提交到gitub"><a href="#提交到gitub" class="headerlink" title="提交到gitub"></a>提交到gitub</h3><pre><code class="bash">$ hexo deploy</code></pre><h3 id="书写参数设置"><a href="#书写参数设置" class="headerlink" title="书写参数设置"></a>书写参数设置</h3><pre><code class="bash">title: postName #文章页面上的显示名称，一般是中文date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: [tag1,tag2,tag3] #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</code></pre><h3 id="新建文章-跟标题"><a href="#新建文章-跟标题" class="headerlink" title="新建文章 跟标题"></a>新建文章 跟标题</h3><pre><code class="bash">$ hexo new&lt;title&gt;</code></pre><h3 id="更新-提示“FATAL-Port-4000-has-been-used-Try-other-port-instead-”"><a href="#更新-提示“FATAL-Port-4000-has-been-used-Try-other-port-instead-”" class="headerlink" title="更新 提示“FATAL Port 4000 has been used. Try other port instead.”"></a>更新 提示“FATAL Port 4000 has been used. Try other port instead.”</h3><p>在使用了$ hexo s命令预览博客效果后使用Control+C关闭<br>解决办法：</p><pre><code class="bash">$ sudo hexo s -p 新端口号</code></pre>]]></content>
     
     
     <categories>
