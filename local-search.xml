@@ -30,6 +30,31 @@
   
   <entry>
     <title>java面试题</title>
+    <link href="undefined2019/12/22/java%E9%9D%A2%E8%AF%95%E9%A2%98-3/"/>
+    <url>2019/12/22/java%E9%9D%A2%E8%AF%95%E9%A2%98-3/</url>
+    
+    <content type="html"><![CDATA[<p>java 每天5道 练习</p><h2 id="1-什么是接口？有没有做过接口开发"><a href="#1-什么是接口？有没有做过接口开发" class="headerlink" title="1.什么是接口？有没有做过接口开发"></a>1.什么是接口？有没有做过接口开发</h2><p>  你说的是前后端交互的接口是吧。我主要就是做java后台开发的，我们开发的时候有一个接口文档，我们按照接口文档里规定的参数请求的url进行开发就行。<br>  我们一般用postman做的测试，接口文档里主要包括什么？请求的url，参数，返回值类型，请求方式，get,post,put,delete</p><pre><code class="bash">  请求方法   GET  URL       http://sso.taotao.com/user/check/{param}/{type}参数说明       格式如：zhangsan/ 1，其中zhangsan是校验的数据，type为类型，可选参数1、2、3分别代表username、phone、email 可选参数callback：如果有此参数表示此方法为jsonp请求，需要支持jsonp。示例         http://sso.taotao.com/user/check/zhangsan/1返回值       {status: 200 //200 成功msg: &quot;OK&quot; // 返回信息消息data: false // 返回数据，true：数据可用，false：数据不可用}</code></pre><h2 id="2-泛型"><a href="#2-泛型" class="headerlink" title="2.泛型"></a>2.泛型</h2><p>  我记得泛型是JDK1.5以后有的,我觉得使用泛型的好处就是让我们的集合变的更安全一些,省去了强制转换.</p><h2 id="3-io和nio的区别"><a href="#3-io和nio的区别" class="headerlink" title="3.io和nio的区别"></a>3.io和nio的区别</h2><p>  这个NIO是JDK1.7以后有的,它们俩的主要区别是:io 是面向流是阻塞io,nio是面向缓冲,非阻塞的io;<br>  io的话每次从流中读取一个或多个字节,直到读取完所有的字节,没有缓存到任何地方.nio读取的是数据是有缓存,就是说他读取的数据是在缓冲里读的.    另外的话,java中的各种io是阻塞的.就是说一个线程调用read或者write()时,这个线程就已经被阻塞了,直到读取到一些数据为止,或者是完全写入.在这个过程中不能干其他的事情.  nio的非阻塞模式,当发送一个读取数据的请求的时候,如果没有读取到可用的数据,就什么也不会获取,且不会让线程阻塞写也是这样.非阻塞的IO的空闲时间可用用来做其他的操作所以,一个单独的非阻塞线程可以管理多个输入和输出通道,另外NIO还有一个selector(选择器),它是可以管理多个输入输出的通道.我大概了解的也就是这样.</p><h2 id="4-静态变量与非静态变量的区别如下"><a href="#4-静态变量与非静态变量的区别如下" class="headerlink" title="4.静态变量与非静态变量的区别如下?"></a>4.静态变量与非静态变量的区别如下?</h2><p>  我们在开发的时候尽量是少使用或者不适用静态的变量我们会尽量把常量写到properties配置文件里,直接从配置文件中读取. 因为使用静态变量以后在程序初始化的时候就会存到内存中而且直到应用程序结束,应用程序就是tomcat启动(红色字体不用背在于理解),太占用jvm的内存,使用非静态的化,被实例化以后才会给分配内存, 后面的概念问到的说,不问就不说了(说多了感觉像是背的.)<br>  调用方式<br>  静态变量只能通过“类.静态变量名”调用，类的实例不能调用；<br>  非静态变量当该变量所在的类被实例化后，可通过实例化的类名直接访问。<br>  共享方式<br>  静态变量是全局变量，被所有类的实例对象共享，即一个实例的改变了静态变量的值，其他同类的实例读到的就是变化后的值；<br>  非静态变量是局部变量，不共享的。<br>  访问方式<br>  静态成员不能访问非静态成员；<br>  非静态成员可以访问静态成员。</p><h2 id="5-在Java中要想实现多线程代码有三种手段"><a href="#5-在Java中要想实现多线程代码有三种手段" class="headerlink" title="5.在Java中要想实现多线程代码有三种手段?"></a>5.在Java中要想实现多线程代码有三种手段?</h2><p>  一种是继承Thread类<br>  另一种就是实现Runnable接口<br>  最后一种就是实现Callable接口</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java面试题</title>
     <link href="undefined2019/12/21/java%E9%9D%A2%E8%AF%95%E9%A2%98-2/"/>
     <url>2019/12/21/java%E9%9D%A2%E8%AF%95%E9%A2%98-2/</url>
     
