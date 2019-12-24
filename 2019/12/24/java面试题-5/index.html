@@ -119,7 +119,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  Sunday, December 22nd 2019, 12:50 pm
+                  Tuesday, December 24th 2019, 5:18 pm
                 </p>
               
 
@@ -128,7 +128,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    982 字
+                    1.2k 字
                   </span>&nbsp;
                 
 
@@ -136,7 +136,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      3 分钟
+                      4 分钟
                   </span>&nbsp;
                 
 
@@ -169,21 +169,32 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <p>java 每天5道 练习</p>
-<h2 id="1-什么是接口？有没有做过接口开发"><a href="#1-什么是接口？有没有做过接口开发" class="headerlink" title="1.什么是接口？有没有做过接口开发"></a>1.什么是接口？有没有做过接口开发</h2><p>  你说的是前后端交互的接口是吧。我主要就是做java后台开发的，我们开发的时候有一个接口文档，我们按照接口文档里规定的参数请求的url进行开发就行。<br>  我们一般用postman做的测试，接口文档里主要包括什么？请求的url，参数，返回值类型，请求方式，get,post,put,delete</p>
-<pre><code class="bash">  请求方法   GET
-  URL       http://sso.taotao.com/user/check/{param}/{type}
-参数说明       格式如：zhangsan/ 1，其中zhangsan是校验的数据，type为类型，可选参数1、2、3分别代表username、phone、email 可选参数callback：如果有此参数表示此方法为jsonp请求，需要支持jsonp。
-示例         http://sso.taotao.com/user/check/zhangsan/1
-返回值       {
-status: 200 //200 成功
-msg: &quot;OK&quot; // 返回信息消息
-data: false // 返回数据，true：数据可用，false：数据不可用
-}</code></pre>
-<h2 id="2-泛型"><a href="#2-泛型" class="headerlink" title="2.泛型"></a>2.泛型</h2><p>  我记得泛型是JDK1.5以后有的,我觉得使用泛型的好处就是让我们的集合变的更安全一些,省去了强制转换.</p>
-<h2 id="3-io和nio的区别"><a href="#3-io和nio的区别" class="headerlink" title="3.io和nio的区别"></a>3.io和nio的区别</h2><p>  这个NIO是JDK1.7以后有的,它们俩的主要区别是:io 是面向流是阻塞io,nio是面向缓冲,非阻塞的io;<br>  io的话每次从流中读取一个或多个字节,直到读取完所有的字节,没有缓存到任何地方.nio读取的是数据是有缓存,就是说他读取的数据是在缓冲里读的.    另外的话,java中的各种io是阻塞的.就是说一个线程调用read或者write()时,这个线程就已经被阻塞了,直到读取到一些数据为止,或者是完全写入.在这个过程中不能干其他的事情.  nio的非阻塞模式,当发送一个读取数据的请求的时候,如果没有读取到可用的数据,就什么也不会获取,且不会让线程阻塞写也是这样.非阻塞的IO的空闲时间可用用来做其他的操作所以,一个单独的非阻塞线程可以管理多个输入和输出通道,另外NIO还有一个selector(选择器),它是可以管理多个输入输出的通道.我大概了解的也就是这样.</p>
-<h2 id="4-静态变量与非静态变量的区别如下"><a href="#4-静态变量与非静态变量的区别如下" class="headerlink" title="4.静态变量与非静态变量的区别如下?"></a>4.静态变量与非静态变量的区别如下?</h2><p>  我们在开发的时候尽量是少使用或者不适用静态的变量我们会尽量把常量写到properties配置文件里,直接从配置文件中读取. 因为使用静态变量以后在程序初始化的时候就会存到内存中而且直到应用程序结束,应用程序就是tomcat启动(红色字体不用背在于理解),太占用jvm的内存,使用非静态的化,被实例化以后才会给分配内存, 后面的概念问到的说,不问就不说了(说多了感觉像是背的.)<br>  调用方式<br>  静态变量只能通过“类.静态变量名”调用，类的实例不能调用；<br>  非静态变量当该变量所在的类被实例化后，可通过实例化的类名直接访问。<br>  共享方式<br>  静态变量是全局变量，被所有类的实例对象共享，即一个实例的改变了静态变量的值，其他同类的实例读到的就是变化后的值；<br>  非静态变量是局部变量，不共享的。<br>  访问方式<br>  静态成员不能访问非静态成员；<br>  非静态成员可以访问静态成员。</p>
-<h2 id="5-在Java中要想实现多线程代码有三种手段"><a href="#5-在Java中要想实现多线程代码有三种手段" class="headerlink" title="5.在Java中要想实现多线程代码有三种手段?"></a>5.在Java中要想实现多线程代码有三种手段?</h2><p>  一种是继承Thread类<br>  另一种就是实现Runnable接口<br>  最后一种就是实现Callable接口</p>
+            <h2 id="1-jvm内存分析-解释下堆和栈-解释下虚拟机"><a href="#1-jvm内存分析-解释下堆和栈-解释下虚拟机" class="headerlink" title="1.jvm内存分析? 解释下堆和栈? 解释下虚拟机?"></a>1.jvm内存分析? 解释下堆和栈? 解释下虚拟机?</h2><p>原来学java的时候知道JVM内存结构主要有三大块：堆内存、方法区和栈。堆内存是JVM中最大的一块内存地址,它主要由年轻代和老年代还有持久代组成,所有new出来的对象都存储在该区域. 栈就是暂存数据的地方,每个线程包含一个栈区，栈存放在一级缓存中，存取速度较快,栈中只保存基础数据类型的对象和自定义对象的引用.每个栈中的数据都是私有的，其他栈不能访问。方法区存放了要加载的类的信息（如类名、修饰符等）、静态变量、构造函数、final定义的常量、类中的字段和方法等信息。<br>声明并创建对象</p>
+<p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%2023341.png" srcset="/img/loading.gif" alt=""></p>
+<h2 id="2-自定义Annotation-自定义注解"><a href="#2-自定义Annotation-自定义注解" class="headerlink" title="2.自定义Annotation,自定义注解"></a>2.自定义Annotation,自定义注解</h2><p>大学里学java初级的时候写过自定的注解,  按照下面代码说一下, 开发以后就没在写过了,都是用的框架给带的注解 spring的那些注解给挨个说一遍<br>向Annotation中设置参数内容<br>Annotation定义格式：<br>[public] @interface Annotation名称{<br>数据类型 变量名称() ;<br>    }</p>
+<pre><code class="bash"> 定义注解：
+public @interface Controller {
+
+}
+使用注解：
+@Controller
+public class UserController {
+
+}
+定义带参数的注解（详见api，有时间可以写个demo）
+定义注解：
+public @interface Controller {
+    public String value();        // 定义参数
+}
+使用注解：
+//@Controller(value=&quot;userService&quot;)
+@Controller(&quot;userService&quot;)  // 注解的参数名为value时，参数名可以省略
+public class UserController {
+}
+常见java内建注解，override等</code></pre>
+<h2 id="3-有没有遇到过内存溢出，内存泄漏"><a href="#3-有没有遇到过内存溢出，内存泄漏" class="headerlink" title="3.有没有遇到过内存溢出，内存泄漏?"></a>3.有没有遇到过内存溢出，内存泄漏?</h2><p>开发的时候遇到过,其实内存溢出指的是jvm内存溢出，通过调整堆，栈的大小来解决。代码中出现死循环或递归调用也会造成内存溢出,一般我们去调整一下他的内存大小就行,配置一下tomcat里的一个参数就能调整,一般造成内存溢出的原因是什么? 一方面有可能是代码中有长时间没有关闭的连接,或者是用IO读取完文件以后没有及时关闭,原来再使用hibernate的时候就遇到过内存溢出,就是因为没有及时的去关闭缓存造成的,还有就是代码问题,比如说写了死循环,程序出问题,递归自己调用自己的时候代码写的有问题都有可能造成内存溢出.我感觉内存泄漏和内存溢出差不多.</p>
+<h2 id="4-说一下GC垃圾回收过程"><a href="#4-说一下GC垃圾回收过程" class="headerlink" title="4.说一下GC垃圾回收过程"></a>4.说一下GC垃圾回收过程</h2><p>我们Java中的垃圾回收都是自动的,我们很少几乎不去手动的干预,我就是先说一下这个JVM中的的堆内存结构,他主要分为新生代和老年代，新生代就是用来存放刚被new出来的对象，一般情况下占堆的1/3空间,还有就是新生代中又分为3个区具体我也记不清是哪三个区了 反正老年代里存放咱们整个应用程序中生命周期长的内存对象,我原来再网上看过,我们的JVM垃圾回收算法我记得差不多有4种,标记清除法,复制算法,标记整理算法,分代收集算法,我就了解其中的两种,比如说 说清楚其中的两个就行,都说出来就有点太假了,根本不可能记不住那么多<br>第一种就是标记-清除法<br>分为：标记，请除<br>标记阶段：直接在内存里标记无用的对象，然后清除阶段直接回收被标记的对象；<br>缺点：形成内存碎片,一些大的对象无法找到足够的空间而触发新的垃圾收集动作。<br>第二种：复制算法：<br>将内存划分为大小相等的两块，当一块的内存用完了，就把还存活的对象复制到另外一块上面，然后将之前的那块清理掉<br>缺点：浪费内存太多（对老年代的使用，效率低）<br>第三种：标记-整理算法<br>将存活的对象都向一端移动，然后直接清理掉这端边界以外的内存<br>第四种：分代收集算法：（当前商业虚拟机都采用这个）<br>根据对象的存活中期的不同将内存划分为几块，一般Java堆分为新生代和老年代<br>新生代：用复制算法   老年代用标记整理算法进行回收</p>
+<h2 id="5-你以前有遍历过xml文件吗"><a href="#5-你以前有遍历过xml文件吗" class="headerlink" title="5.你以前有遍历过xml文件吗?"></a>5.你以前有遍历过xml文件吗?</h2><p>我们使用Dom4J遍历xml文件,我们在遍历的时候先获取根节点再获取子节点,或者里面属性啥的.getRoot,getDocument方法啥的,</p>
 
             <hr>
           </div>

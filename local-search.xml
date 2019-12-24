@@ -4,6 +4,81 @@
   
   
   <entry>
+    <title>2020新计划</title>
+    <link href="undefined2019/12/24/%E6%96%B0%E8%AE%A1%E5%88%92/"/>
+    <url>2019/12/24/%E6%96%B0%E8%AE%A1%E5%88%92/</url>
+    
+    <content type="html"><![CDATA[<p>持续更新</p><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>计划</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java面试题</title>
+    <link href="undefined2019/12/24/java%E9%9D%A2%E8%AF%95%E9%A2%98-5/"/>
+    <url>2019/12/24/java%E9%9D%A2%E8%AF%95%E9%A2%98-5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-jvm内存分析-解释下堆和栈-解释下虚拟机"><a href="#1-jvm内存分析-解释下堆和栈-解释下虚拟机" class="headerlink" title="1.jvm内存分析? 解释下堆和栈? 解释下虚拟机?"></a>1.jvm内存分析? 解释下堆和栈? 解释下虚拟机?</h2><p>原来学java的时候知道JVM内存结构主要有三大块：堆内存、方法区和栈。堆内存是JVM中最大的一块内存地址,它主要由年轻代和老年代还有持久代组成,所有new出来的对象都存储在该区域. 栈就是暂存数据的地方,每个线程包含一个栈区，栈存放在一级缓存中，存取速度较快,栈中只保存基础数据类型的对象和自定义对象的引用.每个栈中的数据都是私有的，其他栈不能访问。方法区存放了要加载的类的信息（如类名、修饰符等）、静态变量、构造函数、final定义的常量、类中的字段和方法等信息。<br>声明并创建对象</p><p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87%2023341.png" srcset="/img/loading.gif" alt=""></p><h2 id="2-自定义Annotation-自定义注解"><a href="#2-自定义Annotation-自定义注解" class="headerlink" title="2.自定义Annotation,自定义注解"></a>2.自定义Annotation,自定义注解</h2><p>大学里学java初级的时候写过自定的注解,  按照下面代码说一下, 开发以后就没在写过了,都是用的框架给带的注解 spring的那些注解给挨个说一遍<br>向Annotation中设置参数内容<br>Annotation定义格式：<br>[public] @interface Annotation名称{<br>数据类型 变量名称() ;<br>    }</p><pre><code class="bash"> 定义注解：public @interface Controller {}使用注解：@Controllerpublic class UserController {}定义带参数的注解（详见api，有时间可以写个demo）定义注解：public @interface Controller {    public String value();        // 定义参数}使用注解：//@Controller(value=&quot;userService&quot;)@Controller(&quot;userService&quot;)  // 注解的参数名为value时，参数名可以省略public class UserController {}常见java内建注解，override等</code></pre><h2 id="3-有没有遇到过内存溢出，内存泄漏"><a href="#3-有没有遇到过内存溢出，内存泄漏" class="headerlink" title="3.有没有遇到过内存溢出，内存泄漏?"></a>3.有没有遇到过内存溢出，内存泄漏?</h2><p>开发的时候遇到过,其实内存溢出指的是jvm内存溢出，通过调整堆，栈的大小来解决。代码中出现死循环或递归调用也会造成内存溢出,一般我们去调整一下他的内存大小就行,配置一下tomcat里的一个参数就能调整,一般造成内存溢出的原因是什么? 一方面有可能是代码中有长时间没有关闭的连接,或者是用IO读取完文件以后没有及时关闭,原来再使用hibernate的时候就遇到过内存溢出,就是因为没有及时的去关闭缓存造成的,还有就是代码问题,比如说写了死循环,程序出问题,递归自己调用自己的时候代码写的有问题都有可能造成内存溢出.我感觉内存泄漏和内存溢出差不多.</p><h2 id="4-说一下GC垃圾回收过程"><a href="#4-说一下GC垃圾回收过程" class="headerlink" title="4.说一下GC垃圾回收过程"></a>4.说一下GC垃圾回收过程</h2><p>我们Java中的垃圾回收都是自动的,我们很少几乎不去手动的干预,我就是先说一下这个JVM中的的堆内存结构,他主要分为新生代和老年代，新生代就是用来存放刚被new出来的对象，一般情况下占堆的1/3空间,还有就是新生代中又分为3个区具体我也记不清是哪三个区了 反正老年代里存放咱们整个应用程序中生命周期长的内存对象,我原来再网上看过,我们的JVM垃圾回收算法我记得差不多有4种,标记清除法,复制算法,标记整理算法,分代收集算法,我就了解其中的两种,比如说 说清楚其中的两个就行,都说出来就有点太假了,根本不可能记不住那么多<br>第一种就是标记-清除法<br>分为：标记，请除<br>标记阶段：直接在内存里标记无用的对象，然后清除阶段直接回收被标记的对象；<br>缺点：形成内存碎片,一些大的对象无法找到足够的空间而触发新的垃圾收集动作。<br>第二种：复制算法：<br>将内存划分为大小相等的两块，当一块的内存用完了，就把还存活的对象复制到另外一块上面，然后将之前的那块清理掉<br>缺点：浪费内存太多（对老年代的使用，效率低）<br>第三种：标记-整理算法<br>将存活的对象都向一端移动，然后直接清理掉这端边界以外的内存<br>第四种：分代收集算法：（当前商业虚拟机都采用这个）<br>根据对象的存活中期的不同将内存划分为几块，一般Java堆分为新生代和老年代<br>新生代：用复制算法   老年代用标记整理算法进行回收</p><h2 id="5-你以前有遍历过xml文件吗"><a href="#5-你以前有遍历过xml文件吗" class="headerlink" title="5.你以前有遍历过xml文件吗?"></a>5.你以前有遍历过xml文件吗?</h2><p>我们使用Dom4J遍历xml文件,我们在遍历的时候先获取根节点再获取子节点,或者里面属性啥的.getRoot,getDocument方法啥的,</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java面试题</title>
+    <link href="undefined2019/12/24/java%E9%9D%A2%E8%AF%95%E9%A2%98-4/"/>
+    <url>2019/12/24/java%E9%9D%A2%E8%AF%95%E9%A2%98-4/</url>
+    
+    <content type="html"><![CDATA[<p>java 每天5道 练习</p><h2 id="1-线程的状态"><a href="#1-线程的状态" class="headerlink" title="1.线程的状态"></a>1.线程的状态</h2><p>其实线程一般具有五种状态，即创建、就绪、运行、阻塞、终止。 </p><p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87123%201.png" srcset="/img/loading.gif" alt=""><br>下面这些问到的就回答一下,比如说让你启动一个线程调用哪个方法?<br>new 出一个Thread对象后，些时线程是新建<br>start()之后线程是就绪状态，等待CPU调用CPU调用之后线程就变成了运行：<br>sleep之后是阻塞，不会释放监视器上的锁，线程睡起来之后又变成就绪状态<br>yield之后就绪状态，不会释放锁<br>wait之后，其它线程变成阻塞状态<br>nifity之后，其它线程变成就绪状态<br>suspend：就是将线程挂起变成阻塞状态<br>resume：就是挂起的线程恢复，变成就绪状态<br>stop：停止线程，变成死亡状态<br>run方法运行完或出现异常或break等变成死亡状态</p><h2 id="2-线程同步，什么是锁"><a href="#2-线程同步，什么是锁" class="headerlink" title="2.线程同步，什么是锁"></a>2.线程同步，什么是锁</h2><pre><code class="bash">实现线程同步有三种方式：1)    同步代码块：在代码块上加上“synchronized”关键字的话，则此代码块就称为同步代码块。 同步代码块格式：synchronized(监视对象){        需要同步的代码 ;    }解释：监视对象有三种：对象、String、.class文件（只要是不变的对象都可以做监视对象）2)    同步方法同步方法定义格式：synchronized 方法返回值 方法名称(参数列表){}在方法上加synchronized，是把当前对象做为监视器3)    同步锁Lock lock = new  ReentrantLock();(可以在类中直接new)lock.lock();  中间的代码块进行加锁lock.unlock(); </code></pre><h2 id="3-线程通信"><a href="#3-线程通信" class="headerlink" title="3.线程通信"></a>3.线程通信</h2><p>传统的线程通信－wait()与notify()方法<br>notify()和notifyAll()<br>对于唤醒的操作有两个：notify()、notifyAll()。一般来说，所有等待的线程会按照顺序进行排列，如果现在使用了notify()方法的话，则会唤醒第一个等待的线程执行，而如果使用了notifyAll()方法，则会唤醒所有的等待线程，那个线程的优先级高，那个线程就有可能先执行。</p><h2 id="4-多线程怎么解决高并发？"><a href="#4-多线程怎么解决高并发？" class="headerlink" title="4.多线程怎么解决高并发？"></a>4.多线程怎么解决高并发？</h2><p>synchronized关键字主要解决多线程共享数据同步问题。<br>ThreadLocal使用场合主要解决多线程中数据因并发产生不一致问题。<br>ThreadLocal和Synchonized都用于解决多线程并发访问但是ThreadLocal与synchronized有本质的区别:<br>synchronized是利用锁的机制，使变量或代码块在某一时该只能被一个线程访问。而ThreadLocal是为每一个线程都提供了变量的副本，使得每个线程在某一时间访问到的并不是同一个对象，这样就隔离了多个线程对数据的数据共享。而Synchronized却正好相反，它用于在多个线程间通信时能够获得数据共享。</p><h2 id="5-什么是多线程-在哪里应用过"><a href="#5-什么是多线程-在哪里应用过" class="headerlink" title="5.什么是多线程?在哪里应用过?"></a>5.什么是多线程?在哪里应用过?</h2><p>线程就是可执行的代码段，线程要服务于进程，一个进程有好多个线程，main方法就是主线程，多个线程同时执行就是多线程，线程池就是把准备好的线程放到线程池里，如果处理请求需要调用线程的时候，就从线程池里去调用，用完以后再放回到线程池里，这样就防止高并发节省资源,我们目前开发中没有涉及到过多线程,其实我个人理解用多线程无非是为了提高代码的执行效率提高客户的体验,解决高并发,但是项目里如果多线程使用的多的话,后期的代码维护这一块也不怎么好维护,我们现在在解决这些高并发都是建议使用中间件来解决,redis啦,activeMQ啦,还有solr等等,  然后把这几个中间件的原理说一下….就能巧妙的避免开这个多线程的问题啦…</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>java面试题</title>
     <link href="undefined2019/12/22/java%E9%9D%A2%E8%AF%95%E9%A2%98-3/"/>
     <url>2019/12/22/java%E9%9D%A2%E8%AF%95%E9%A2%98-3/</url>

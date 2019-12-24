@@ -16,7 +16,7 @@
   <meta name="description" content="个人博客，记录生活，回顾技术">
   <meta name="author" content="刘昭博">
   <meta name="keywords" content="">
-  <title>毕业于郑州信息科技学院 ~  刘昭博</title>
+  <title>java面试题 ~  刘昭博</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
@@ -42,7 +42,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -104,7 +104,7 @@
 </nav>
 
     <div class="view intro-2" id="background"
-         style="background: url('http://q2rjj2f8w.bkt.clouddn.com/default5.png')no-repeat center center;
+         style="background: url('http://q2rjj2f8w.bkt.clouddn.com/java.png')no-repeat center center;
            background-size: cover;
            background-attachment: fixed;">
       <div class="full-bg-img">
@@ -114,6 +114,41 @@
               
             </span>
 
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Tuesday, December 24th 2019, 5:10 pm
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      3 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
             
           </div>
 
@@ -125,57 +160,122 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-            <div class="about-avatar">
-              <img src="http://q2rjj2f8w.bkt.clouddn.com/avatar.png"
-                   class="img-fluid z-depth-1 rounded-circle"
-                   alt="avatar">
-            </div>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>java 每天5道 练习</p>
+<h2 id="1-线程的状态"><a href="#1-线程的状态" class="headerlink" title="1.线程的状态"></a>1.线程的状态</h2><p>其实线程一般具有五种状态，即创建、就绪、运行、阻塞、终止。 </p>
+<p><img src="http://q2rjj2f8w.bkt.clouddn.com/%E5%9B%BE%E7%89%87123%201.png" srcset="/img/loading.gif" alt=""><br>下面这些问到的就回答一下,比如说让你启动一个线程调用哪个方法?<br>new 出一个Thread对象后，些时线程是新建<br>start()之后线程是就绪状态，等待CPU调用CPU调用之后线程就变成了运行：<br>sleep之后是阻塞，不会释放监视器上的锁，线程睡起来之后又变成就绪状态<br>yield之后就绪状态，不会释放锁<br>wait之后，其它线程变成阻塞状态<br>nifity之后，其它线程变成就绪状态<br>suspend：就是将线程挂起变成阻塞状态<br>resume：就是挂起的线程恢复，变成就绪状态<br>stop：停止线程，变成死亡状态<br>run方法运行完或出现异常或break等变成死亡状态</p>
+<h2 id="2-线程同步，什么是锁"><a href="#2-线程同步，什么是锁" class="headerlink" title="2.线程同步，什么是锁"></a>2.线程同步，什么是锁</h2><pre><code class="bash">实现线程同步有三种方式：
+1)    同步代码块：在代码块上加上“synchronized”关键字的话，则此代码块就称为同步代码块。 
+同步代码块格式：
+synchronized(监视对象){
+        需要同步的代码 ;
+    }
+解释：监视对象有三种：对象、String、.class文件（只要是不变的对象都可以做监视对象）
+2)    同步方法
+同步方法定义格式：
+synchronized 方法返回值 方法名称(参数列表){}
+
+在方法上加synchronized，是把当前对象做为监视器
+3)    同步锁
+Lock lock = new  ReentrantLock();(可以在类中直接new)
+lock.lock();  中间的代码块进行加锁lock.unlock(); </code></pre>
+<h2 id="3-线程通信"><a href="#3-线程通信" class="headerlink" title="3.线程通信"></a>3.线程通信</h2><p>传统的线程通信－wait()与notify()方法<br>notify()和notifyAll()<br>对于唤醒的操作有两个：notify()、notifyAll()。一般来说，所有等待的线程会按照顺序进行排列，如果现在使用了notify()方法的话，则会唤醒第一个等待的线程执行，而如果使用了notifyAll()方法，则会唤醒所有的等待线程，那个线程的优先级高，那个线程就有可能先执行。</p>
+<h2 id="4-多线程怎么解决高并发？"><a href="#4-多线程怎么解决高并发？" class="headerlink" title="4.多线程怎么解决高并发？"></a>4.多线程怎么解决高并发？</h2><p>synchronized关键字主要解决多线程共享数据同步问题。<br>ThreadLocal使用场合主要解决多线程中数据因并发产生不一致问题。<br>ThreadLocal和Synchonized都用于解决多线程并发访问但是ThreadLocal与synchronized有本质的区别:<br>synchronized是利用锁的机制，使变量或代码块在某一时该只能被一个线程访问。而ThreadLocal是为每一个线程都提供了变量的副本，使得每个线程在某一时间访问到的并不是同一个对象，这样就隔离了多个线程对数据的数据共享。而Synchronized却正好相反，它用于在多个线程间通信时能够获得数据共享。</p>
+<h2 id="5-什么是多线程-在哪里应用过"><a href="#5-什么是多线程-在哪里应用过" class="headerlink" title="5.什么是多线程?在哪里应用过?"></a>5.什么是多线程?在哪里应用过?</h2><p>线程就是可执行的代码段，线程要服务于进程，一个进程有好多个线程，main方法就是主线程，多个线程同时执行就是多线程，线程池就是把准备好的线程放到线程池里，如果处理请求需要调用线程的时候，就从线程池里去调用，用完以后再放回到线程池里，这样就防止高并发节省资源,我们目前开发中没有涉及到过多线程,其实我个人理解用多线程无非是为了提高代码的执行效率提高客户的体验,解决高并发,但是项目里如果多线程使用的多的话,后期的代码维护这一块也不怎么好维护,我们现在在解决这些高并发都是建议使用中间件来解决,redis啦,activeMQ啦,还有solr等等,  然后把这几个中间件的原理说一下….就能巧妙的避免开这个多线程的问题啦…</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
                 
-
-<div class="text-center">
-  <p class="h3">刘昭博</p>
-  <p>生活没有目标，犹如航海没有罗盘。 --罗斯金</p>
-  
-    
-    
-    <a href="https://github.com"
-       class="h4 ">
-      <i class="fab fa-github" aria-hidden="true"></i>
-      
-    </a>
-    &nbsp;&nbsp;
-  
-    
-    
-    <a href="https://twitter.com"
-       class="h4 ">
-      <i class="fab fa-twitter" aria-hidden="true"></i>
-      
-    </a>
-    &nbsp;&nbsp;
-  
-    
-    
-</div>
-<div class="mt-5 markdown-body">
-  <h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><p>  目前从事 Java 及相关工作。<br>  喜欢研究新兴技术和未来发展方向。<br>  喜欢敲代码，喜欢研究技术的，表面上高冷、不苟言笑的，<br>  偶尔又嬉皮笑脸，偶尔又特立独行的，双重性格的技术爱好者！</p>
-<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p>  WeChat: Liuzhaobo009<br>  Email:  <a href="mailto:java17630714303@163.com">java17630714303@163.com</a></p>
-<h2 id="我的开源项目"><a href="#我的开源项目" class="headerlink" title="我的开源项目"></a>我的开源项目</h2><p>  平台权限管理系统： </p>
-
-</div>
-
-              </div>
-            </div>
+                  <a class="hover-with-bg" href="/categories/%E5%BC%80%E5%8F%91">开发</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/java%E9%9D%A2%E8%AF%95%E9%A2%98">java面试题</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot">
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+  <div id="vcomments" style="width: 90%; margin: 0 auto;"></div>
+  <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+  <script>
+    var notify = 'false' === true;
+    var verify = 'false' === true;
+    var oldLoad = window.onload;
+    window.onload = function () {
+      new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        app_id: "FIsaWwJQSbsbeAKSGfHvJRhD-gzGzoHsz",
+        app_key: "z1KLD7TI85gf4oQCD6oHADhg",
+        placeholder: "说点什么",
+        avatar: "retro",
+        meta: ['nick', 'mail', 'link'],
+        pageSize: "10",
+      });
+      oldLoad && oldLoad();
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+    
+  </div>
+
+</div>
+
     
   </main>
 
@@ -253,6 +353,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
@@ -294,7 +399,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "毕业于郑州信息科技学院&nbsp;",
+        "java面试题&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
