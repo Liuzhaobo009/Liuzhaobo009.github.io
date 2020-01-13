@@ -4,11 +4,49 @@
   
   
   <entry>
+    <title>java面试题</title>
+    <link href="undefined2020/01/13/java%E9%9D%A2%E8%AF%95%E9%A2%98-7/"/>
+    <url>2020/01/13/java%E9%9D%A2%E8%AF%95%E9%A2%98-7/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java面试题</title>
+    <link href="undefined2019/12/25/java%E9%9D%A2%E8%AF%95%E9%A2%98-6/"/>
+    <url>2019/12/25/java%E9%9D%A2%E8%AF%95%E9%A2%98-6/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-什么是反射，反射能干嘛"><a href="#1-什么是反射，反射能干嘛" class="headerlink" title="1.什么是反射，反射能干嘛"></a>1.什么是反射，反射能干嘛</h2><p>反射：简单说。反射机制在运行时能够获得自身的信息。在java中，只要给定类的名字，那么就可以通过反射机制获得类的所有信息。<br>反射的作用其实就是：在运行时判断任意一个对象所属的类。在运行时构造任意一个类的对象。</p><h2 id="2-get和post-的区别"><a href="#2-get和post-的区别" class="headerlink" title="2.get和post 的区别"></a>2.get和post 的区别</h2><p>Get使用url传递数据的不安全，而且传递的数据量比较小，post传递大的数据量，还有put请求修改，delete请求方式。</p><h2 id="3-说五个开发中常见的异常"><a href="#3-说五个开发中常见的异常" class="headerlink" title="3.说五个开发中常见的异常"></a>3.说五个开发中常见的异常</h2><p>我们开发经常会遇到 ioException ,NullPOINTEXCEPTION,fileNotExceptionm,SqlException,ClassnotException,ClasscastException.<br>pathException</p><h2 id="4-THrow-和-Throws的区别"><a href="#4-THrow-和-Throws的区别" class="headerlink" title="4.THrow 和 Throws的区别"></a>4.THrow 和 Throws的区别</h2><p>throw是抛出自定义异常的，throws 是在方法上抛出异常的</p><h2 id="5-session和cookie的区别"><a href="#5-session和cookie的区别" class="headerlink" title="5.session和cookie的区别"></a>5.session和cookie的区别</h2><p>Session是保存到服务器端，Cookie是保存到客户端的，session相对于cokkie来说更安全</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java面试题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2020新计划</title>
     <link href="undefined2019/12/24/%E6%96%B0%E8%AE%A1%E5%88%92/"/>
     <url>2019/12/24/%E6%96%B0%E8%AE%A1%E5%88%92/</url>
     
-    <content type="html"><![CDATA[<p>持续更新</p><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2><h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2>]]></content>
+    <content type="html"><![CDATA[<p>持续更新</p><h2 id="1-保持健身。keep达到就高级别强度"><a href="#1-保持健身。keep达到就高级别强度" class="headerlink" title="1.保持健身。keep达到就高级别强度"></a>1.保持健身。keep达到就高级别强度</h2><h2 id="2-读完-罗浮-卡夫斯基的书"><a href="#2-读完-罗浮-卡夫斯基的书" class="headerlink" title="2.读完 罗浮 卡夫斯基的书"></a>2.读完 罗浮 卡夫斯基的书</h2><h2 id="3-完成自己的开源项目并发布"><a href="#3-完成自己的开源项目并发布" class="headerlink" title="3.完成自己的开源项目并发布"></a>3.完成自己的开源项目并发布</h2><h2 id="4-优化博客"><a href="#4-优化博客" class="headerlink" title="4.优化博客"></a>4.优化博客</h2><h2 id="5-近期睡眠不行，保证睡眠质量"><a href="#5-近期睡眠不行，保证睡眠质量" class="headerlink" title="5.近期睡眠不行，保证睡眠质量"></a>5.近期睡眠不行，保证睡眠质量</h2>]]></content>
     
     
     <categories>
